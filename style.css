@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --yellow: #f1f58f;
+    --oragen: #ffa930;
+    --pink: #ff32b2;
+    --cyan: #C4F5FC;
+    --auqua: #B7FFD8;
+
+}
+
+body{
+    background-image: url(assets/back.jpg);
+    text-align: center;
+    margin: 0;
+    padding: 0%;
+    font-family: roboto;
+    box-sizing: border-box;
+    
+    
+}
+
+h1{
+    padding: 0;
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50px;
+}
+
+
+
+
+
+.close{
+
+}
+
+
+
+.wrapper{
+    margin: 80px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 75px;
+}
+
+.box{
+    /* height: 300px; */
+    border: solid;
+    border-radius: 10px;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;  
+    
+    
+}
+
+.list{
+
+}
+
+.box-header{
+    border-radius: 10px 10px 0 0;
+    font-size: 30px;
+    font-family: roboto;
+    background:var(--mauve);
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.orange{
+    background-color: var(--oragen);
+}
+
+.pink{
+    background-color: var(--pink);
+}
+
+.cyan{
+    background-color: var(--auqua);
+}
+.yellow{
+    background-color: var(--yellow);
+}
+
+.addButton {
+   width: 40%;
+   height:40px;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   margin: 10px 0 0 10%;
+   float: left;
+}
+
+.savebutton{
+   
+    float: right;
+    margin: 10px;
+    outline: none;
+    border: none;
+}
+
+
+@media  screen and (max-width: 1000px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media  screen and (max-width: 700px) {
+    .container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+.modal{
+    width: 80%;
+    background: white;
+    text-align: center;
+    margin: 10px;
+    min-height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    position: relative;
+    display: none;
+    
+}
+
+.active{
+    display: inline-block;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+.item{
+    width: 80%;
+    background: white;
+    text-align: center;
+    margin: 10px;
+    min-height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+  
+}
+
+.over{
+    opacity: 0.5;
+}

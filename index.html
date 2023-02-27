@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>KanBan Board</title>
+</head>
+<body>
+  
+    <h1>KanBan Board</h1>
+
+<div class="wrapper">
+    <div class="container">
+
+        <div class="box yellow">
+            <h3 class="box-header">Backlog</h3>
+            <ul id="backlogList" class="list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(0)">
+                
+               
+                
+            </ul>
+            <button class="addButton">+ add Item</button>
+            <div class="modal">
+                <input type="text" name="" id="newItem" placeholder="Whats Happening">
+                <button  class="savebutton">Save</button>
+            </div>
+        </div>
+
+        <div  class="box pink" >
+            <h3 class="box-header">Progress</h3>
+            <ul id="progressList" class="list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(1)">
+               
+            </ul>
+           
+            <button class="addButton">+ add Item</button>
+            <div class="modal">
+                <input type="text" name="" id="newItem" placeholder="Whats Happening">
+                <button  class="savebutton">Save</button>
+            </div>
+        </div>
+
+        <div class="box orange">
+            <h3 class="box-header">Complete</h3>
+            <ul id="completeList" class="list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(2)">
+              
+            </ul>
+            <button class="addButton">+ add Item</button>
+            <div class="modal">
+                <input type="text" name="" id="newItem" placeholder="Whats Happening">
+                <button  class="savebutton">Save</button>
+            </div>
+        </div>
+
+        <div class="box cyan">
+            <h3 class="box-header">On Hold</h3>
+            <ul id="onholdList" class="list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(3)">
+               
+                
+            </ul>
+            <button class="addButton">+ add Item</button>
+            <div class="modal">
+                <input type="text" name="" id="newItem" placeholder="Whats Happening">
+                <button  class="savebutton">Save</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
